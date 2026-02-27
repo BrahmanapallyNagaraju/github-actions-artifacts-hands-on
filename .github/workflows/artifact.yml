@@ -23,8 +23,6 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: print github workspace
-        run: echo "workspace is ${{github.workspace}}"
       - name: download hello file
         uses: actions/download-artifact@v4
         with:
